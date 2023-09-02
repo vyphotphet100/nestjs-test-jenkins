@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/vyphotphet100/nestjs-test-jenkins.git'
+                git branch: 'main', url: 'https://github.com/vyphotphet100/nestjs-test-jenkins.git'
             }
         }
     }
